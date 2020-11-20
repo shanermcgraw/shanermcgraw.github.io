@@ -33,7 +33,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <span className={styles.link}>brakkit.gg</span>
         </h1>
-        <Box>
+        <Box mt={4}>
             <a href="/qb">
              <Box display="flex" flexDirection="column" alignItems="center"  justifyContent="center" className={classes.button}>
                 <Typography>

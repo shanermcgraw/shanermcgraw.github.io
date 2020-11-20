@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.link {
+  color: #524491;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;

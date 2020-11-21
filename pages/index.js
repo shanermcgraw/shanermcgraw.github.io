@@ -1,24 +1,24 @@
-import React from 'react'
-import Head from 'next/head'
-import { makeStyles } from '@material-ui/core/styles'
-import Box from '@material-ui/core/Box';
+import React from "react";
+import Head from "next/head";
+import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
-import PeopleIcon from '@material-ui/icons/People'
+import PeopleIcon from "@material-ui/icons/People";
 
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
 const useStyles = makeStyles({
-   root: {},
-   button: {
-       width: '150px',
-       height: '150px',
-       borderStyle: 'solid',
-       '&:hover': {
-           color: '#524491',
-           cursor: 'pointer'
-       }
-   }
-})
+  root: {},
+  button: {
+    width: "150px",
+    height: "150px",
+    borderStyle: "solid",
+    "&:hover": {
+      color: "#524491",
+      cursor: "pointer",
+    },
+  },
+});
 
 export default function Home() {
   const classes = useStyles();
@@ -34,16 +34,20 @@ export default function Home() {
           Welcome to <span className={styles.link}>brakkit.gg</span>
         </h1>
         <Box mt={4}>
-            <a href="/qb">
-             <Box display="flex" flexDirection="column" alignItems="center"  justifyContent="center" className={classes.button}>
-                <Typography>
-                    Generate Bracket
-                </Typography>
-                <PeopleIcon />
-             </Box>
-            </a>
+          <a href="/qb">
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="center"
+              className={classes.button}
+            >
+              <Typography>Generate Bracket</Typography>
+              <PeopleIcon />
+            </Box>
+          </a>
         </Box>
       </main>
     </Box>
-  )
+  );
 }
